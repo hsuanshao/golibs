@@ -1,0 +1,43 @@
+---
+logger:
+  level: debug
+  sendtorollbar: true
+  rollbartoken: 02259bfc36d54fa19adf049081a3a479
+dynamodb:
+  region: us-east-1
+  table: Table_2
+  temp_table: Table
+  index: GSI1
+  index2: GSI2
+  index3: GSI3
+  geo_engine_queue_table: quincus_dispatch_geo_engine_queue_table
+  dispatch__shipment_shipments: dispatch__shipment_shipments
+arcstone:
+  api: http://52.187.179.175/arc.flow/workflows/Invoke?token=CfDJ8I2rzKNEzUBElqdEYtO5a6uF9G-a_kHoveZHp2Id3ay0O4mv3rKKetWx88CChH3faT6C00_dC75wIR2MuFTX7YZ-q-iVoBa2iGel5TWNpFVcdsEYHs8ChXanz0yrHEZHct_LqXwrqtfIC4ijI_wrhqhtOar1U8i90H2IEbfwJH1sp-pY5N2eVWI53ysmY8uYDTokArxCW2JF4Q75yVqVDJ6i00UQQHt1ox-qlNeuJLos
+s3:
+  region: us-east-1
+  dispatch_bucket: dispatchfileuploads
+apis:
+  le_response_handler: https://x8u3x0o2z3.execute-api.us-east-1.amazonaws.com/dev/api/v3/logistic_engine_response_handler
+lambda:
+  geo_engine_callback: quincus-dispatch-default-dev-geo_engine_callback
+  create_shipment_async: quincus-dispatch-default-dev-create_shipment_async
+  dispatch_events_to_shipments: quincus-dispatch-default-dev-dispatch_events_to_shipments
+  api_payloads: quincus-dispatch-default-dev-api_payloads
+  job_callbacks: quincus-dispatch-default-dev-job_callbacks
+admin_service:
+  host: https://api-dev-admin.quincus.com
+  api_auth: eyJhbGciOiJIUzI1NiJ9.eyJuYW1lIjoiZGlzcGF0Y2giLCJqdGkiOiJjYzUzMmI2MC04MTZmLTQ3MTItOTVhNi1kNWQ3ZjY3ZmFiNzUiLCJvcmdhbmlzYXRpb25zIjpbXSwiZXhwaXJlc19hdCI6IiJ9.oCiqRLv1EpkVsPulhV4OK_H5ed4kGTpaxxZdGpOqZHU
+geo_engine_service:
+  host: https://uluru.quincus.com
+logistic_engine_service:
+  host: http://3.1.185.79:8081
+shipment_service:
+  host: https://api-dev-shipment.quincus.com
+  auth_token: shipment-common@high_secuity
+auth_service:
+  Host: https://api-dev-auth.quincus.com
+api_client_token: d29EX8mqUAx9krww
+pricing_service:
+  api: https://api.pricing.dev.quincus.com/api/v2/collections
+  auth_token: 53e4b1a39b242dae4493c62849b917bd268e6e96f16d5aa2

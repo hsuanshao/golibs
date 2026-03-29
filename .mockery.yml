@@ -1,0 +1,8 @@
+packages:
+  github.com/hsuanshao/golibs:
+    config:
+      recursive: true
+      all: true
+      dir: "{{.InterfaceDir}}/mocks"
+      filename: "mock_{{.InterfaceName | snakecase }}.go"
+      structname: "Mock{{.InterfaceName}}"
