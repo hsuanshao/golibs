@@ -56,6 +56,10 @@ const (
 	WebP ContentType = "image/webp"
 	// PNG image mimi content type
 	PNG ContentType = "image/png"
+	// AVIF image mime content type
+	AVIF ContentType = "image/avif"
+	// SVG image mime content type
+	SVG ContentType = "image/svg+xml"
 )
 
 // certification content type
@@ -106,6 +110,14 @@ const (
 	H264 ContentType = "video/h264"
 	// MP4 video content type
 	MP4 ContentType = "video/mp4"
+	// WEBM video content type
+	WEBM ContentType = "video/webm"
+	// QuickTime video content type
+	QuickTime ContentType = "video/quicktime"
+	// MPEG video content type
+	MPEG ContentType = "video/mpeg"
+	// OGG video content type
+	OGG ContentType = "video/ogg"
 )
 
 func (c ContentType) String() string {
